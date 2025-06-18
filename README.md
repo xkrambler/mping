@@ -17,10 +17,13 @@ Simply run ```make install``` to install it or ```make uninstall``` to uninstall
 
 ## Syntax
 ```
-Usage: ./mping [options] [target]
+Usage: ./mping [options] [target ...]
+   target       Targets can be Hosts or IPs to be resolved. Also can be entered as input pipe.
    -t timeout   Timeout in miliseconds
-   -r retries   Retry down hosts extra times
+   -r retries   Number of retries for down hosts
+   -f           Continue retrying pinging hosts
    -n           Do not show hostnames, only IP addresses
+   -s           Only show summary
    -v           Show version
    -h           Show this help
 ```
